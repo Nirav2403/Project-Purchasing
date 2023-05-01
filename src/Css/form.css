@@ -1,0 +1,248 @@
+.form-container {
+  width: max-content;
+  height: 100%;
+  margin-inline: auto;
+  margin-top: 51px;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: move-content-left 2s linear 1s 1 forwards;
+}
+
+@keyframes move-content-left {
+  100% {
+    opacity: 1;
+    transform: translateX(-50px);
+  }
+}
+
+.form-heading {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  color: #170f49;
+  margin-bottom: 12px;
+}
+
+.form-subheading {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #6f6c90;
+  max-width: 500px;
+  margin-inline: auto;
+  margin-bottom: 42px;
+}
+
+.form-section {
+  width: 698px;
+  height: 606px;
+  border: 1px solid #eff0f7;
+  box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  border-radius: 34px;
+  padding-left: 46.26px;
+  padding-right: 55.48px;
+}
+
+.form-progressbar,
+.progress-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.form-progressbar {
+  border-bottom: 1px solid #d9dbe9;
+  padding: 32px;
+  margin-bottom: 64px;
+}
+
+.progress-step-number {
+  width: 34px;
+  height: 34px;
+  background: #eff0f7;
+  color: #6f6c90;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-line {
+  width: 98.09px;
+  height: 6px;
+  background: #eff0f7;
+  border-radius: 40px;
+}
+
+.progress-step.done .progress-step-number {
+  background: #4a3aff;
+  color: white;
+  font-weight: 500;
+  transition: background 0.1s linear 0.01s;
+}
+
+.progress-step.done .progress-line > div:not(.active),
+.progress-step.done .progress-line > div.active {
+  background: #4a3aff;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  transition: width 0.3s;
+}
+
+.progress-step.done .progress-line > div.active {
+  width: 50%;
+}
+
+.form-action-btns {
+  margin-top: 31.61px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-action-btns button {
+  width: 165px;
+  height: 61px;
+}
+
+.form-prev-btn {
+  border: 1px solid #4a3aff;
+  border-radius: 66px !important;
+  background: white !important;
+  box-shadow: none !important;
+  color: #4a3aff !important;
+}
+
+.form-next-btn {
+  margin-left: auto;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #170f49;
+}
+
+.form-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  color: #6f6c90;
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  margin-top: 40px;
+  gap: 28px;
+}
+
+.form-fields > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-fields label {
+  font-weight: 500;
+  font-size: 18px;
+  color: #170f49;
+  margin-bottom: 16px;
+  width: max-content;
+}
+
+.form-fields input:not([type="radio"]) {
+  background: #ffffff;
+  border: 1px solid #eff0f7;
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 46px;
+  width: 284px;
+  height: 66px;
+  padding-left: 20px;
+  padding-right: 60px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form-fields .input-error {
+  border: 1px solid red !important;
+}
+
+.form-fields .error {
+  padding-left: 20px;
+  font-size: 12px;
+  color: #f9644c;
+  margin-top: 5px;
+}
+
+.contact-fields svg {
+  position: absolute;
+  right: 24px;
+  height: 100%;
+}
+
+.service-content-box {
+  width: 284px;
+  height: 114.77px;
+  justify-content: center;
+  border: 1px solid #eff0f7;
+  box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+  border-radius: 16px;
+  padding: 24px;
+  gap: 12px;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+}
+
+.service-content-box.active {
+  border: 2px solid #4a3aff;
+  box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06),
+    0px 4px 10px rgba(31, 37, 89, 0.07);
+}
+
+.service-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #170f49;
+}
+
+.budget-label {
+  margin-bottom: 0;
+}
+.budget-label input {
+  height: 24px;
+  width: 23px;
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-container .form-subtitle {
+  max-width: 438px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.submit-container .submit-btn {
+  width: 143px;
+  height: 61px;
+}
+
+.preview-modal .modal-content .modal-dialog {
+  margin: 0;
+}
+
+.preview-details > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 12px;
+  margin: 12px;
+}

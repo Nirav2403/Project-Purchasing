@@ -1,0 +1,17 @@
+.header-container {
+  padding: 32px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.header-row {
+  text-align: end;
+}
+
+.login-btn {
+  width: 126px;
+  height: 61px;
+  margin-right: 70px;
+}
